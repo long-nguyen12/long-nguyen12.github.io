@@ -1,4 +1,4 @@
-.container{
+.container {
   margin: 0;
 }
 .row-body {
@@ -10,4 +10,7 @@
   -webkit-text-fill-color: #ffffff;
   height: auto !important;
   min-height: 100%;
+}
+.title {
+  -webkit-text-fill-color: #001d85;
 }
