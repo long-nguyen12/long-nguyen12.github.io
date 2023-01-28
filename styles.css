@@ -1,0 +1,13 @@
+.container{
+  margin: 0;
+}
+.row-body {
+  height: auto !important;
+  min-height: 100%;
+}
+.left-column {
+  background-color: #001d85;
+  -webkit-text-fill-color: #ffffff;
+  height: auto !important;
+  min-height: 100%;
+}
