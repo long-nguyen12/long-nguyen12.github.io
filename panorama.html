@@ -53,10 +53,10 @@
         container: document.querySelector("#viewer"),
       });
 
-      let panorama = new PANOLENS.ImagePanorama("./img/building.jpg");
+      let panorama = new PANOLENS.ImagePanorama("./assets/building.jpg");
       viewer.add(panorama);
 
-      let new_panorama = new PANOLENS.ImagePanorama("./img/building.jpg");
+      let new_panorama = new PANOLENS.ImagePanorama("./assets/building.jpg");
       let new_infospot1 = new PANOLENS.Infospot(200, PANOLENS.DataImage.Info);
       new_infospot1.position.set(1500, -800, -2000);
       new_infospot1.addEventListener("click", function () {
@@ -81,7 +81,7 @@
         new_panorama,
         new THREE.Vector3(200, -800, -2000),
         200,
-        "./img/building.jpg"
+        "./assets/building.jpg"
       );
       new_panorama.link(panorama, new THREE.Vector3(200, -800, -2000));
 
