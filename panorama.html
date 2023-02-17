@@ -29,10 +29,22 @@
         -webkit-overflow-scrolling: touch;
         padding: 20px;
       }
+      #log {
+        position: absolute;
+        background: #fff;
+        padding: 20px;
+        top: 20px;
+        left: 20px;
+        width: 150px;
+        font: normal 12px/18px Monospace, Arial, Helvetical, sans-serif;
+        text-align: left;
+        border: 3px double #ddd;
+      }
     </style>
   </head>
   <body>
     <div id="viewer"></div>
+    <div id="log">Khoa Công nghệ thông tin và truyền thông</div>
 
     <script src="https://pchen66.github.io/js/three/three.min.js"></script>
     <script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
@@ -41,10 +53,10 @@
         container: document.querySelector("#viewer"),
       });
 
-      let panorama = new PANOLENS.ImagePanorama("./assets/test_1.jpg");
+      let panorama = new PANOLENS.ImagePanorama("./img/building.jpg");
       viewer.add(panorama);
 
-      let new_panorama = new PANOLENS.ImagePanorama("./assets/test_1.jpg");
+      let new_panorama = new PANOLENS.ImagePanorama("./img/building.jpg");
       let new_infospot1 = new PANOLENS.Infospot(200, PANOLENS.DataImage.Info);
       new_infospot1.position.set(1500, -800, -2000);
       new_infospot1.addEventListener("click", function () {
@@ -69,7 +81,7 @@
         new_panorama,
         new THREE.Vector3(200, -800, -2000),
         200,
-        "./assets/test_1.jpg"
+        "./img/building.jpg"
       );
       new_panorama.link(panorama, new THREE.Vector3(200, -800, -2000));
 
@@ -79,16 +91,6 @@
         )
       )
         viewer.enableControl(PANOLENS.CONTROLS.DEVICEORIENTATION);
-
-      viewer = new PANOLENS.Viewer({
-        container: container,
-        autoRotate: true,
-        autoRotateSpeed: 1,
-        autoRotateActivationDuration: 5000,
-      });
-      viewer.add(panorama);
-
-      viewer.addUpdateCallback(function () {});
     </script>
   </body>
 </html>
