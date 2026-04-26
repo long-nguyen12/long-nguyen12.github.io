@@ -330,9 +330,9 @@ function initMusic() {
 
   // Use direct audio file URLs (.mp3/.ogg), not page URLs.
   const playlist = [
-    '../assets/songs/song3.mp3',
-    '../assets/songs/song2.mp3',
-    '../assets/songs/song1.mp3',
+    'https://long-nguyen12.github.io/assets/songs/song3.mp3',
+    'https://long-nguyen12.github.io/assets/songs/song2.mp3',
+    'https://long-nguyen12.github.io/assets/songs/song1.mp3',
   ];
 
   let trackIndex = 0;
