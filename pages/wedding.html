@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazyyyy & Crazyyyy — Ngày xx tháng yy, 2029</title>
+    <link rel="stylesheet" href="../assets/css/wedding-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav">
+      <div class="nav__logo">C&nbsp;&amp;&nbsp;C</div>
+      <ul class="nav__links">
+        <li><a href="#story">Chuyện tình</a></li>
+        <li><a href="#details">Thông tin</a></li>
+        <li><a href="#gallery">Khoảnh khắc</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+      <button class="nav__music" id="musicToggle" aria-label="Bật/tắt nhạc">
+        <span class="music-icon">♪</span>
+      </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__particles" id="particleCanvas"></div>
+      <canvas class="hero__heart" id="heartCanvas"></canvas>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Chúng mình sắp cưới</p>
+        <h1 class="hero__names reveal">
+          <span class="name">Crazyyyy</span>
+          <span class="ampersand">&amp;</span>
+          <span class="name">Crazyyyy</span>
+        </h1>
+        <div class="hero__date reveal">
+          <span class="date-line"></span>
+          <time>Thứ Bảy, ngày xx tháng yy năm 2029</time>
+          <span class="date-line"></span>
+        </div>
+        <div class="hero__counter reveal" id="counter">
+          <span id="counterNumber">—</span>
+          <span id="counterLabel">ngày nữa</span>
+        </div>
+        <a href="#story" class="hero__scroll reveal">
+          <span>Cuộn xuống</span>
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== STORY ===== -->
+    <section class="story" id="story">
+      <div class="story__deco">Our Story</div>
+      <div class="story__inner">
+        <div class="story__text">
+          <h2 class="section-title reveal">Chuyện bắt đầu</h2>
+          <p class="story__body reveal">
+            Mọi chuyện bắt đầu vào một ngày thứ Ba mưa rơi, trong một hiệu sách
+            mà cả hai đều không định ghé vào. Alex chỉ vào trú mưa; Jordan thì
+            đến trả lại cuốn tiểu thuyết đã đọc đến hai lần. Một cuộc trò chuyện
+            về Fitzgerald dẫn đến tách cà phê, rồi bữa tối, và ở đâu đó giữa món
+            súp và món tráng miệng, mọi thứ đã đổi thay.
+          </p>
+          <p class="story__body reveal">
+            Ba năm, hai thành phố, một chú mèo cực kỳ "có chính kiến", và vô số
+            tách trà sau đó — chúng mình nhận ra câu chuyện này xứng đáng có
+            thêm một chương mới. Và đây chính là chương ấy.
+          </p>
+          <p class="story__body reveal story__body--italic">
+            "Trên khắp thế gian này, không có trái tim nào dành cho anh như trái
+            tim em."
+          </p>
+        </div>
+        <div class="story__images">
+          <div class="story__img story__img--1 reveal">
+            <img
+              src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=600&q=80"
+              alt="Cặp đôi lúc hoàng hôn"
+              loading="lazy"
+            />
+          </div>
+          <div class="story__img story__img--2 reveal">
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"
+              alt="Cặp đôi dạo bước"
+              loading="lazy"
+            />
+          </div>
+          <div class="story__img story__img--3 reveal">
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=80"
+              alt="Chân dung cặp đôi"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DETAILS ===== -->
+    <section class="details" id="details">
+      <div class="details__inner">
+        <h2 class="section-title section-title--light reveal">
+          Ngày trọng đại
+        </h2>
+        <div class="details__grid">
+          <div class="detail-card reveal">
+            <div class="detail-card__icon">✦</div>
+            <h3>Lễ nạp tài</h3>
+            <p class="detail-card__time">3:00 PM</p>
+            <p class="detail-card__venue">Thanh Hóa</p>
+            <p class="detail-card__addr">Thanh Hóa<br />Việt Nam</p>
+          </div>
+
+          <div class="detail-card detail-card--center reveal">
+            <div class="detail-card__date-block">
+              <span class="day-num">xx</span>
+              <span class="month">Tháng yy</span>
+              <span class="year">2029</span>
+            </div>
+          </div>
+
+          <div class="detail-card reveal">
+            <div class="detail-card__icon">✦</div>
+            <h3>Lễ cưới</h3>
+            <p class="detail-card__time">6:00 PM</p>
+            <p class="detail-card__venue">Thanh Hóa</p>
+            <p class="detail-card__addr">Thanh Hóa<br />Việt Nam</p>
+          </div>
+        </div>
+
+        <div class="details__map reveal">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=105.76220512390138%2C19.73212882175406%2C105.84254264831544%2C19.78382657711762&amp;layer=mapnik"
+            title="Bản đồ địa điểm cưới"
+            loading="lazy"
+            allowfullscreen="false"
+          >
+          </iframe>
+          <div class="details__map-overlay">
+            <a
+              href="https://maps.app.goo.gl/dHtHq4krauHAuXwm6"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+              >Mở trong bản đồ</a
+            >
+          </div>
+        </div>
+
+        <!-- <div class="details__notes reveal">
+        <p>Trang phục: <em>Lịch sự (Black Tie không bắt buộc)</em></p>
+        <p>Sẽ có xe đưa đón miễn phí giữa các địa điểm.</p>
+      </div> -->
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__inner">
+        <h2 class="section-title reveal">Kỷ niệm</h2>
+        <div class="gallery__grid">
+          <div class="gallery__item reveal" style="--delay: 0s">
+            <img
+              src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=600&q=80"
+              alt="Kỷ niệm 1"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery__item reveal" style="--delay: 0.08s">
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=80"
+              alt="Kỷ niệm 2"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery__item reveal" style="--delay: 0.16s">
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=80"
+              alt="Kỷ niệm 3"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery__item reveal" style="--delay: 0.24s">
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80"
+              alt="Kỷ niệm 4"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery__item reveal" style="--delay: 0.32s">
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=80"
+              alt="Kỷ niệm 5"
+              loading="lazy"
+            />
+          </div>
+          <div class="gallery__item reveal" style="--delay: 0.4s">
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&q=80"
+              alt="Kỷ niệm 6"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RSVP ===== -->
+    <section class="rsvp" id="rsvp">
+      <div class="rsvp__inner">
+        <p class="rsvp__eyebrow reveal">
+          Vui lòng phản hồi trước ngày xx tháng yy, 2029
+        </p>
+        <h2 class="section-title reveal">
+          Bạn sẽ đến chung vui cùng chúng mình chứ?
+        </h2>
+
+        <form class="rsvp__form reveal" id="rsvpForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Họ và tên</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tên của bạn"
+                autocomplete="name"
+              />
+              <span class="field-error" id="nameError"></span>
+            </div>
+          </div>
+
+          <div class="form-row form-row--2col">
+            <div class="form-field">
+              <label>Xác nhận tham dự</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="yes" />
+                  <span>Vui vẻ tham dự</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="attendance" value="no" />
+                  <span>Rất tiếc không thể tham dự</span>
+                </label>
+              </div>
+              <span class="field-error" id="attendanceError"></span>
+            </div>
+            <div class="form-field">
+              <label for="guests">Số lượng khách</label>
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="6"
+                placeholder="1"
+              />
+              <span class="field-error" id="guestsError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="message">Lời nhắn cho cô dâu chú rể</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Gửi lời chúc của bạn..."
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Gửi xác nhận</button>
+        </form>
+
+        <div class="rsvp__success" id="rsvpSuccess">
+          <div class="success__heart">♥</div>
+          <h3>Cảm ơn bạn!</h3>
+          <p>
+            Chúng mình đã nhận được phản hồi và rất mong được cùng bạn chung
+            vui.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p class="footer__names">Crazyyyy &amp; Crazyyyy</p>
+      <p class="footer__date">xx · yy · 2029</p>
+      <p class="footer__quote">
+        "Sau cùng, tình yêu bạn nhận được cũng chính là tình yêu bạn trao đi."
+      </p>
+    </footer>
+
+    <audio id="bgMusic"></audio>
+
+    <script src="../assets/js/wedding-script.js"></script>
+  </body>
+</html>
