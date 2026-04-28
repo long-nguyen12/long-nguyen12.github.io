@@ -1,82 +1,183 @@
 /*--------------------------------------------------------------
-# General
+# Home
 --------------------------------------------------------------*/
 
-:root {
-  /* --primary-colors --*/
-  --white-ish:#F9F7F7;
-  --light-gray: #DBE2EF;
-  --blue-light:#669bbc;
-  --blue-medium: #0077b6;
-  --blue-dark:rgb(15, 76, 117);
-  --dark-b: #003566;
-  --gray-black: #415a77;
-  --darker-b:#1B262C;
-
-  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+.home-shell {
+  padding-top: 2.2rem;
 }
 
-
-h4,h5, p, ul>li, .btn-blue{
-    font-family: 'Ubuntu Sans', sans-serif;
+.home-hero {
+  position: relative;
 }
 
-/* body > div > ol:nth-child(7) > li > button > a */
-
-.btn-blue{
-    color: var(--white-ish) !important;
-    background-color: var(--blue-light);
-	border: 2px solid var(--blue-medium);
-}  
-
-.btn-blue > a{
-    color: var(--white-ish);
-    /* background-color: var(--blue-medium); */
-    border-color: var(--light-gray);
+.profile-panel,
+.intro-card,
+.section-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(16, 41, 67, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 20px 44px rgba(16, 41, 67, 0.12);
+  backdrop-filter: blur(12px);
 }
 
-button:hover{
-    font-size:1.0001rem ;
-    background-color: var(--blue-medium);
-    /* color: var(--white-ish) !important; */
+.profile-panel {
+  height: 100%;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, rgba(216, 155, 67, 0.14), transparent 32%),
+    rgba(255, 255, 255, 0.8);
 }
 
-button > a {
-    color: var(--white-ish) !important; 
+.profile-photo {
+  width: min(70%, 250px);
+  max-width: 250px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 36px rgba(16, 41, 67, 0.18);
 }
 
-button > a:hover{
-    color: var(--white-ish) !important;
-    text-decoration: none;
+.profile-kicker {
+  margin-top: 1.5rem;
+  margin-bottom: 0.55rem;
+  color: var(--blue-medium);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
+.profile-name {
+  margin-bottom: 0.6rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+}
 
-a {
-    color:var(--blue-light);
+.profile-affiliation {
+  margin-bottom: 1.2rem;
+  color: var(--gray-black);
+  line-height: 1.6;
+}
+
+.profile-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-highlights li {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(216, 155, 67, 0.12);
+  color: var(--dark-b);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.profile-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-links li + li {
+  margin-top: 0.6rem;
+}
+
+.profile-link,
+.profile-link--static {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 18px;
+  background: rgba(242, 246, 251, 0.92);
+  color: var(--gray-black);
+  text-align: left;
+  box-shadow: inset 0 0 0 1px rgba(16, 41, 67, 0.05);
+}
+
+.profile-link:hover {
+  transform: translateY(-1px);
+}
+
+.profile-link .fa-fw,
+.profile-link--static .fa-fw {
+  margin-top: 0.15rem;
+  color: var(--blue-medium);
+}
+
+.profile-link--static {
+  cursor: default;
+}
+
+.intro-card,
+.section-panel {
+  padding: 2rem;
+}
+
+.section-label {
+  margin-bottom: 0.85rem;
+  color: var(--blue-medium);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-title {
+  margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.home-lead {
+  margin-bottom: 0;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.section-panel + .section-panel {
+  margin-top: 1.4rem;
+}
+
+.section-panel h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.45rem;
+}
+
+.section-panel p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 991.98px) {
+  .intro-card,
+  .section-panel {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .profile-panel {
+    padding: 1.6rem 1.15rem;
   }
 
-  a:hover {
-    color: var(--blue-medium) ;
-    text-decoration: none !important;
-    /* font-size:1.3rem !important; */
-  }
-  
-  .fa-fw{
-    color: var(--blue-medium) ;
+  .profile-photo {
+    width: min(64%, 220px);
   }
 
-  .social-icons {
-    list-style-type: none;
+  .home-title {
+    font-size: 2.25rem;
   }
-  
 
-.ref-journal{
-    font-weight: 600; 
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--blue-medium);
+  .home-lead,
+  .section-panel p {
+    line-height: 1.72;
+  }
 }
-
-/* .pl-5{
-	padding-left: 100px !important;
-} */
