@@ -222,6 +222,11 @@ function initNav() {
   const nav = document.getElementById('nav');
   if (!nav) return;
 
+  if (new Date() > WEDDING_DATE) {
+    const rsvpLink = nav.querySelector('.nav__rsvp');
+    if (rsvpLink) rsvpLink.textContent = 'Khoảnh khắc';
+  }
+
   let lastY = 0;
   function onScroll() {
     const y = window.scrollY;
