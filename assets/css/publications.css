@@ -35,13 +35,6 @@ h4, h5, p{
 
 
 
-li > span > a:hover {
-    color: var(--blue-medium);
-    text-decoration: none;
-    /* font-size:1.001rem ; */
-	font-weight: 700 !important;
-  }
-
 /* .btn-blue{
     color: var(--white-ish);
     background-color: var(--blue-medium);
@@ -52,6 +45,7 @@ li > span > a:hover {
     color: var(--white-ish) !important;
     background-color: var(--blue-light);
     border-color: var(--light-gray);
+    margin-top: 20px;
 } 
 
 .btn-blue > a{
@@ -91,6 +85,11 @@ a:hover {
   font-size: 0.9rem; 
   border: 1px solid var(--blue-light);
   background-color: var(--light-gray);
+}
+
+.bibtex-card pre,
+pre[id^="bibtex-prp-"]{
+  color: #ffffff;
 }
 
 .bibtex-copy-btn{

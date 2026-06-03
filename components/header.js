@@ -29,16 +29,16 @@ class Header extends HTMLElement {
                   <a class="nav-link" href="/pages/education.html">Education</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/publications.html">Publication</a>
+                  <a class="nav-link" href="/pages/publications.html">Publications</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/experience.html">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/skills.html">Skill</a>
+                  <a class="nav-link" href="/pages/skills.html">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/projects.html">Project</a>
+                  <a class="nav-link" href="/pages/projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/misc.html">Misc</a>

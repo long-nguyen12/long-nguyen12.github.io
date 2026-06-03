@@ -1,3 +1,5 @@
-const template = document.getElementById('welcome-msg');
+const template = document.getElementById("welcome-msg");
 
-document.body.appendChild(template.content);
+if (template) {
+  document.body.appendChild(template.content.cloneNode(true));
+}

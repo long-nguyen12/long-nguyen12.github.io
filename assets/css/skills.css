@@ -28,3 +28,44 @@ a:hover {
 }
 
 /* body > div > ol:nth-child(7) > li > button > a */
+
+body .icon-box h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 1.1rem;
+    color: var(--dark-b);
+    font-size: 1.1rem;
+}
+
+body .icon-box h4 i {
+    min-width: 1.35rem;
+    margin-right: 0 !important;
+    color: var(--accent-gold);
+}
+
+body .icon-box p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+body .icon-box img {
+    width: auto;
+    height: 54px;
+    max-width: 170px;
+    margin: 0 !important;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid rgba(var(--blue-medium-rgb), 0.16);
+    border-radius: 8px;
+    background: rgba(248, 246, 239, 0.94);
+    object-fit: contain;
+}
+
+@media (max-width: 575.98px) {
+    body .icon-box img {
+        height: 48px;
+        max-width: 145px;
+    }
+}
