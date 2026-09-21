@@ -1,117 +1,98 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-:root {
-  /* --primary-colors --*/
-  --white-ish:#F9F7F7;
-  --light-gray: #DBE2EF;
-  --blue-light:#669bbc;
-  --blue-medium: #0077b6;
-  --blue-dark:rgb(15, 76, 117);
-  --dark-b: #003566;
-  --gray-black: #415a77;
-  --darker-b:#1B262C;
-
-  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+.projects-shell {
+  max-width: 1040px;
 }
 
-
-h4,h5, p{
-    font-family: 'Ubuntu Sans', sans-serif;
+.projects-intro {
+  max-width: 64ch;
+  margin: -0.75rem 0 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-a:hover {
-    color: var(--blue-medium) ;
-    text-decoration: none !important;
-    /* font-size:1.3rem !important; */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
 }
 
-/* body > div > ol:nth-child(7) > li > button > a */
-
-.card-title{
-    font-weight: 800;
+.project-card {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 1.15rem;
+  min-height: 255px;
+  padding: clamp(1.25rem, 3vw, 1.7rem);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(12px);
 }
 
-.small-lemos{
-    font-weight: 500;
-    font-size: smaller;
-    color: var(--blue-light);
+.project-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(var(--blue-medium-rgb), 0.2);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(var(--blue-medium-rgb), 0.17), rgba(240, 185, 104, 0.14));
+  color: var(--blue-medium);
+  font-size: 1.35rem;
 }
 
-.card{
-    background-color: var(--light-gray);
+.project-label {
+  margin-bottom: 0.45rem;
+  color: var(--accent-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
 }
 
-.card-subtitle{
-    font-weight: 700;
-    color: var(--blue-medium);
+.project-card h2 {
+  margin-bottom: 0.65rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.3;
 }
 
-.span-lemos{
-    /* font-size: small; */
-    color: var(--gray-black);
-
+.project-content > p:not(.project-label) {
+  margin-bottom: 1rem;
+  line-height: 1.65;
 }
 
-.card-img-top{
-    border: var(--blue-light) 2px solid;
-    max-width: 250px;
-	border-radius: 5px;
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.img-lemos{
-    background-color: var(--gray-black);
+.project-tools li {
+  padding: 0.36rem 0.65rem;
+  border: 1px solid rgba(240, 185, 104, 0.25);
+  border-radius: 999px;
+  background: rgba(240, 185, 104, 0.08);
+  color: var(--dark-b);
+  font-size: 0.84rem;
+  font-weight: 700;
 }
 
-.activity-names{
-    font-weight: 600;
-    /* font-size: 90%; */
+@media (max-width: 991.98px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
 }
 
-.activity-lemos{
-    font-size: 95%;
-}
-
-.card{
-	border: 1px solid var(--blue-light);
-/* 	background-color: var(--blue-medium); */
-	background-color: var(--bluish-gray);
-	
-}
-
-.sw-tools{
-	background-color: var(--light-gray);
-	color: var(--blue-medium);
-	border: 1px solid var(--blue-light);
-	border-radius: 5px;
-	font-size: smaller;
-	font-family: Consolas;
-}
-
-.btn-blue{
-    color: var(--white-ish) !important;
-    background-color: var(--blue-light);
-	border: 2px solid var(--blue-medium);
-}  
-
-.btn-blue > a{
-    color: var(--white-ish);
-    /* background-color: var(--blue-medium); */
-    border-color: var(--light-gray);
-}
-
-button:hover{
-    font-size:1.0001rem ;
-    background-color: var(--blue-medium);
-    /* color: var(--white-ish) !important; */
-}
-
-button > a {
-    color: var(--white-ish) !important; 
-}
-
-button > a:hover{
-    color: var(--white-ish) !important;
-    text-decoration: none;
+@media (max-width: 575.98px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
 }

@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container nav-shell">
             <a class="navbar-brand" href="/">Hoang Long Nguyen</a>
             <button
@@ -26,16 +26,25 @@ class Header extends HTMLElement {
                   <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/education.html">Education</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="/pages/publications.html">Publications</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/skills.html">Skills</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="cvDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    CV
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="cvDropdown">
+                    <a class="dropdown-item" href="/pages/education.html">Education</a>
+                    <a class="dropdown-item" href="/pages/experience.html">Experience</a>
+                    <a class="dropdown-item" href="/pages/skills.html">Skills</a>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/pages/projects.html">Projects</a>
@@ -59,13 +68,18 @@ class Header extends HTMLElement {
     };
 
     const currentPath = normalizePath(window.location.pathname);
-    const links = this.querySelectorAll(".nav-link");
+    const links = this.querySelectorAll(".nav-link, .dropdown-item");
 
     links.forEach((link) => {
       const linkPath = normalizePath(link.getAttribute("href"));
       if (linkPath === currentPath) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
+
+        const dropdown = link.closest(".dropdown");
+        if (dropdown) {
+          dropdown.querySelector(".dropdown-toggle").classList.add("active");
+        }
       }
     });
   }

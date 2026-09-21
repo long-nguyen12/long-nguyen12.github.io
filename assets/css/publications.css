@@ -1,109 +1,189 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-:root {
-  /* --primary-colors --*/
-  --white-ish:#F9F7F7;
-  --light-gray: #DBE2EF;
-  --blue-light:#669bbc;
-  --blue-medium: #0077b6;
-  --blue-dark:rgb(15, 76, 117);
-  --dark-b: #003566;
-  --gray-black: #415a77;
-  --darker-b:#1B262C;
-
-  /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+.publications-shell {
+  max-width: 1040px;
 }
 
-
-.ref-author-lemos {
-    font-weight: 700; 
-    color:var(--darker-b);
+.publications-intro {
+  max-width: 72ch;
+  margin: -0.75rem 0 2.5rem;
 }
 
-.ref-journal{
-    font-weight: 700; 
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:var(--blue-medium);
+.publications-intro p:last-child {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-h4, h5, p{
-    font-family: 'Ubuntu Sans', 'sans-serif';
+.section-label {
+  margin-bottom: 0.5rem;
+  color: var(--blue-medium);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
 }
 
-
-
-/* .btn-blue{
-    color: var(--white-ish);
-    background-color: var(--blue-medium);
-    border-color: var(--light-gray);
-}   */
-
-.btn-blue{
-    color: var(--white-ish) !important;
-    background-color: var(--blue-light);
-    border-color: var(--light-gray);
-    margin-top: 20px;
-} 
-
-.btn-blue > a{
-    color: var(--white-ish);
-    /* background-color: var(--blue-medium); */
-    border-color: var(--light-gray);
+.publication-group {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
 }
 
-button:hover{
-    /* font-size:1.001rem ; */
-    background-color: var(--blue-medium);
+.publication-year {
+  position: sticky;
+  top: 7.2rem;
+  align-self: start;
+  margin: 0;
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
-li > button > a:hover{
-    color: var(--white-ish) !important;
-    text-decoration: none;
+.publication-list {
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(12px);
 }
 
-
-a:hover {
-    color: var(--blue-medium) ;
-    text-decoration: none !important;
-    /* font-size:1.3rem !important; */
+.publication-entry {
+  padding: clamp(1.25rem, 3vw, 1.75rem);
 }
 
-
-/* body > div > ol:nth-child(7) > li > button > a */
-
-.articles-card{
-	
-	background-color: var(--bluish-gray);
-	border-radius: 5px;
-	border: 1px solid var(--blue-light);
+.publication-entry + .publication-entry {
+  border-top: 1px solid var(--border-soft);
 }
 
-.bibtex-card{
-  font-size: 0.9rem; 
-  border: 1px solid var(--blue-light);
-  background-color: var(--light-gray);
+.publication-type {
+  display: inline-flex;
+  margin-bottom: 0.65rem;
+  padding: 0.28rem 0.6rem;
+  border: 1px solid rgba(240, 185, 104, 0.28);
+  border-radius: 999px;
+  background: rgba(240, 185, 104, 0.1);
+  color: var(--accent-gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
 }
 
-.bibtex-card pre,
-pre[id^="bibtex-prp-"]{
-  color: #ffffff;
+.publication-type--conference {
+  border-color: rgba(var(--blue-medium-rgb), 0.28);
+  background: rgba(var(--blue-medium-rgb), 0.1);
+  color: var(--blue-medium);
 }
 
-.bibtex-copy-btn{
-  top: 8px; 
-  right: 8px; 
-  border: 1px solid #ccc;
-  color: var(--gray-black);
-  background-color: var(--white-ish);
-  border: 1px solid var(--blue-light);
+.publication-title {
+  max-width: none;
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  font-weight: 800;
+  line-height: 1.35;
 }
 
-.bibtex-copy-btn:hover{
+.publication-title a {
   color: var(--dark-b);
-  /*background-color: var(--blue-medium);*/
-  background-color: var(--light-gray);
-  border: 1px solid var(--blue-medium);
+}
+
+.publication-authors,
+.publication-venue {
+  /* max-width: 78ch; */
+  margin-bottom: 0.35rem;
+  line-height: 1.65;
+}
+
+.publication-authors strong {
+  color: var(--dark-b);
+  font-weight: 800;
+}
+
+.publication-venue {
+  color: #66777e;
+}
+
+.publication-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.publication-actions .btn-blue {
+  margin-top: 0;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(var(--blue-medium-rgb), 0.26);
+  border-radius: 8px;
+  background: rgba(var(--blue-medium-rgb), 0.08);
+  font-size: 0.875rem;
+  font-weight: 750;
+}
+
+.bibtex-card {
+  margin-top: 1rem;
+  border: 1px solid rgba(var(--blue-medium-rgb), 0.18);
+  border-radius: 8px;
+  background: var(--surface-muted);
+}
+
+.bibtex-card pre {
+  margin: 0;
+  padding: 1.25rem;
+  padding-right: 5.25rem;
+  overflow-x: auto;
+  color: var(--darker-b);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.bibtex-copy-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  border: 1px solid rgba(var(--blue-medium-rgb), 0.26);
+  border-radius: 7px;
+  color: var(--dark-b);
+  background: #ffffff;
+  font-weight: 750;
+}
+
+.bibtex-copy-btn:hover,
+.bibtex-copy-btn:focus {
+  color: var(--dark-b);
+  border-color: rgba(240, 185, 104, 0.38);
+  background: #eef5f4;
+}
+
+@media (max-width: 767.98px) {
+  .publication-group {
+    display: block;
+    margin-top: 2.25rem;
+  }
+
+  .publication-year {
+    position: static;
+    margin-bottom: 0.75rem;
+  }
+
+  .publication-title {
+    max-width: none;
+  }
+
+  .bibtex-card pre {
+    padding-top: 3.5rem;
+    padding-right: 1rem;
+  }
 }

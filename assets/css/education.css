@@ -101,3 +101,23 @@ button:hover{
     background-color: var(--blue-medium);
     /* color: var(--white-ish) !important; */
 }
+
+.education-summary {
+    margin-bottom: 0.8rem;
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.research-focus-list {
+    margin-bottom: 1.25rem;
+    padding-left: 1.2rem;
+}
+
+.research-focus-list li {
+    margin-bottom: 0.55rem;
+    line-height: 1.65;
+}
+
+.research-focus-list strong {
+    color: var(--dark-b);
+}

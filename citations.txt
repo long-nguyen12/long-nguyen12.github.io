@@ -1,0 +1,125 @@
+@incollection{nguyen2022vacant,
+  title={Vacant Parking Car Detection and Notification by Using Multi-camera System and Deep Learning},
+  author={Nguyen, Dinh Cong and Le, Viet Nam and Nguyen, Hoang Long and Tran, Doan Minh and Cao, Van Luyen},
+  booktitle={Intelligent Systems and Networks: Selected Articles from ICISN 2022, Vietnam},
+  pages={221--229},
+  year={2022},
+  publisher={Springer}
+}
+
+@inproceedings{nguyen2022proposed,
+  title={From a Proposed CNN Model to a Real-World Application in Rice Disease Classification.},
+  author={Nguyen, Hoang Long and Tran, Thi Ha and Le Thi, Hong Ha and Nguyen, Dinh Cong},
+  booktitle={RICE},
+  pages={177--182},
+  year={2022}
+}
+
+@inproceedings{hoang2023performance,
+  title={Performance Evaluation of CNN-Based Encoders for Image Captioning},
+  author={Hoang, A. C. and Nguyen, D. C. and Nguyen, H. L.},
+  booktitle={International Conference on Control, Automation and Information Sciences (ICCAIS)},
+  pages={Page--s},
+  year={2023}
+}
+
+@article{nguyen2024polypooling,
+  title={PolyPooling: An accurate polyp segmentation from colonoscopy images},
+  author={Nguyen, Dinh Cong and Nguyen, Hoang Long},
+  journal={Biomedical Signal Processing and Control},
+  volume={92},
+  pages={105979},
+  year={2024}
+}
+
+@article{nguyen2025colonnext,
+  title={Colonnext: Fully convolutional attention for polyp segmentation},
+  author={Nguyen, Dinh Cong and Nguyen, Hoang Long},
+  journal={Journal of Imaging Informatics in Medicine},
+  volume={38},
+  number={4},
+  pages={2194--2209},
+  year={2025},
+  publisher={Springer International Publishing Cham}
+}
+
+@article{nguyen2025early,
+  title={Early Exit Based on Deep Learning Model for Polyp Colonoscopy Image Classification},
+  author={Nguyen, Hoang Long and Phan, Minh-Vu and others},
+  journal={Journal of Technical Education Science},
+  volume={20},
+  number={03},
+  pages={40--47},
+  year={2025}
+}
+
+@inproceedings{hoang12025dual,
+  title={Dual Attention for Vietnamese Image},
+  author={Hoang$^1$, Anh Cong and Nguyen, Hoang Long and Le, Thi Thuy and Phan$^1$, Minh Phong},
+  booktitle={Industrial Networks and Intelligent Systems: 11th EAI International Conference, INISCOM 2025, Da Nang, Vietnam, February 20--21, 2025, Proceedings},
+  pages={174},
+  year={2025},
+  organization={Springer Nature}
+}
+
+@article{nguyen2026snm,
+  title={SNM: A medical image fusion method using SSFRG decomposition, NRBOFA base fusion, and multi-level morphological gradient},
+  author={Nguyen, Hoang-Long and Le, Thi-Hong-Ha and Nguyen, Hoang Long and Dinh, Phu-Hung and Giang, Nguyen Long},
+  journal={Biomedical Signal Processing and Control},
+  volume={113},
+  pages={109080},
+  year={2026},
+  publisher={Elsevier}
+}
+
+@article{nguyen2026enhancing,
+  title={Enhancing Infrared Small Target Detection: A Multi-scale Feature Integration Approach with an Optimized Combined Loss Function},
+  author={Nguyen, Dinh Cong and Nguyen, Hoang Long},
+  journal={SN Computer Science},
+  volume={7},
+  number={2},
+  pages={192},
+  year={2026},
+  publisher={Springer Nature Singapore Singapore}
+}
+
+@article{pham2026tsdfusion,
+  title={TSDFusion: a new medical image fusion method based on transformer and dynamic threshold neural P system},
+  author={Pham, Quang Nam and Nguyen, Hoang Trung and Nguyen, Hoang Long and Le, Thi-Hong-Ha and Nguyen, Hoang-Long and Nguyen, Long Giang},
+  journal={The Imaging Science Journal},
+  pages={1--17},
+  year={2026},
+  publisher={Taylor \& Francis}
+}
+
+@article{nguyen2026explainable,
+  title={Explainable Automated Fact-Checking: An Overview},
+  author={Nguyen, Hoang Long and Rayar, Fr{\'e}d{\'e}ric and Ragot, Nicolas},
+  journal={ROMCIR 2026},
+  year={2026}
+}
+
+@inproceedings{nguyen2026crosstrans,
+  title={CrossTrans-MFC: An Effective Cross Transformer Approach for Multimedia Fact-Checking},
+  author={Nguyen, Hoang Long and Rayar, Fr{\'e}d{\'e}ric and Ragot, Nicolas},
+  booktitle={CBMI 2026},
+  year={2026}
+}
+
+@article{pham2026rcdfusion,
+  title={RCDFusion: Co-Attention Guided Dynamic Convolution for Multi-Modal Medical Image Fusion},
+  author={PHAM, Quang NAM and DAO, Ngoc-Hieu and NGUYEN, Hoang LONG and NGUYEN, Hoang TRUNG and NGUYEN, Long GIANG},
+  journal={IEICE Transactions on Information and Systems},
+  pages={2025EDP7237},
+  year={2026},
+  publisher={The Institute of Electronics, Information and Communication Engineers}
+}
+
+@article{hoang2026benchmarking,
+  title={Benchmarking Vietnamese image captioning: A spatially-aware transformer and the HDUCap dataset},
+  author={Hoang, Anh Cong and Nguyen, Hoang Long and Pham, The-Anh and Nguyen, Dinh Cong},
+  journal={Journal of Visual Communication and Image Representation},
+  pages={104963},
+  year={2026},
+  publisher={Elsevier}
+}
