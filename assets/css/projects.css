@@ -3,7 +3,6 @@
 }
 
 .projects-intro {
-  max-width: 64ch;
   margin: -0.75rem 0 2.5rem;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -52,7 +51,7 @@
 
 .project-card h2 {
   margin-bottom: 0.65rem;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 800;
   line-height: 1.3;
 }

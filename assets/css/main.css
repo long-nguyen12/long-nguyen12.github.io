@@ -98,6 +98,30 @@ h6 {
   color: var(--dark-b);
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -109,11 +133,11 @@ nav.navbar {
   width: min(calc(var(--content-width) - 1.875rem), calc(100% - 3.375rem));
   margin: 0 auto;
   padding: 0.9rem 1.25rem;
-  border: 1px solid var(--border-soft);
+  border: 1px solid rgba(231, 214, 247, 0.18);
   border-radius: 12px;
-  background: rgba(249, 251, 250, 0.97);
+  background: linear-gradient(135deg, rgba(55, 31, 79, 0.98), rgba(39, 21, 57, 0.98));
   backdrop-filter: blur(14px);
-  box-shadow: 0 12px 30px rgba(28, 67, 72, 0.14);
+  box-shadow: 0 12px 30px rgba(38, 20, 55, 0.24);
 }
 
 .nav-shell {
@@ -121,7 +145,7 @@ nav.navbar {
 }
 
 .navbar-brand {
-  color: var(--dark-b) !important;
+  color: #ffffff !important;
   font-size: 1.45rem !important;
   font-weight: 700;
   letter-spacing: 0;
@@ -143,49 +167,49 @@ nav.navbar {
 .nav-link {
   padding: 0.55rem 0.95rem !important;
   border-radius: 8px;
-  color: var(--gray-black) !important;
+  color: rgba(248, 242, 252, 0.8) !important;
   font-weight: 600;
   letter-spacing: 0;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--dark-b) !important;
-  background: rgba(var(--blue-medium-rgb), 0.1);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .dropdown-menu {
   min-width: 11rem;
   margin-top: 0.6rem;
   padding: 0.45rem;
-  border: 1px solid var(--border-soft);
+  border: 1px solid rgba(231, 214, 247, 0.18);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.99);
-  box-shadow: 0 16px 34px rgba(28, 67, 72, 0.13);
+  background: rgba(43, 24, 62, 0.99);
+  box-shadow: 0 16px 34px rgba(38, 20, 55, 0.28);
 }
 
 .dropdown-item {
   padding: 0.6rem 0.75rem;
   border-radius: 7px;
-  color: var(--gray-black);
+  color: rgba(248, 242, 252, 0.8);
   font-weight: 600;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus,
 .dropdown-item.active {
-  color: var(--dark-b) !important;
-  background: rgba(var(--blue-medium-rgb), 0.1);
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .navbar-toggler {
-  border-color: rgba(23, 49, 58, 0.22) !important;
+  border-color: rgba(248, 242, 252, 0.32) !important;
   border-radius: 8px;
 }
 
 .navbar-toggler:focus {
   outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(216, 155, 67, 0.22);
+  box-shadow: 0 0 0 0.2rem rgba(218, 184, 246, 0.26);
 }
 
 .page-shell {
@@ -203,7 +227,7 @@ nav.navbar {
   align-items: center;
   gap: 0.85rem;
   margin-bottom: 2rem;
-  font-size: 2.55rem;
+  font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 0;
 }
@@ -442,18 +466,18 @@ body .text-muted {
 
 .footer-lemos {
   background:
-    linear-gradient(135deg, rgba(var(--blue-medium-rgb), 0.11), transparent 36%),
-    linear-gradient(135deg, #f4f8f7, #e8f1ef);
+    linear-gradient(135deg, rgba(184, 132, 221, 0.16), transparent 38%),
+    linear-gradient(135deg, #371f4f, #271539);
   font-size: smaller;
 }
 
 .footer-lemos-nifme {
-  background: #dfe9e7;
+  background: #1d0f2a;
   font-size: smaller;
 }
 
 .footer-title {
-  color: var(--dark-b);
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -461,7 +485,7 @@ body .text-muted {
 
 .footer-contact,
 .footer-credit {
-  color: var(--gray-black);
+  color: rgba(248, 242, 252, 0.78);
 }
 
 .footer-links {
@@ -471,26 +495,25 @@ body .text-muted {
 }
 
 .footer-links a {
-  color: var(--blue-medium);
+  color: #e2c2fa;
   font-weight: 700;
 }
 
 .footer-lemos a,
 .footer-lemos-nifme a {
-  color: var(--blue-medium);
+  color: #e2c2fa;
 }
 
 .footer-icons {
-  color: var(--blue-medium);
+  color: #e2c2fa;
 }
 
 .footer-icons:hover {
-  color: var(--accent-gold);
+  color: #ffffff;
 }
 
 
 .prose {
-  max-width: 72ch;
   text-align: left;
 }
 
@@ -553,7 +576,7 @@ body .text-muted {
   .page-title {
     display: block;
     margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .page-title::after {

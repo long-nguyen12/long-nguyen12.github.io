@@ -3,7 +3,6 @@
 }
 
 .experience-intro {
-  max-width: 66ch;
   margin: -0.75rem 0 2.5rem;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -89,7 +88,7 @@
 
 .experience-heading h2 {
   margin-bottom: 0.15rem;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 

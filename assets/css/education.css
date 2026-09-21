@@ -55,9 +55,11 @@ a:hover {
 
 }
 
-.card-img-top{
-    /* border: var(--blue-medium) 1px solid; */
-    max-width: 250px;
+body .card-img-top{
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    padding: 0.65rem;
 }
 
 .img-lemos{

@@ -3,7 +3,6 @@
 }
 
 .skills-intro {
-  max-width: 65ch;
   margin: -0.75rem 0 2.5rem;
   font-size: 1.05rem;
   line-height: 1.7;
@@ -51,7 +50,7 @@
 
 .skill-card h2 {
   margin-bottom: 0;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 800;
   line-height: 1.35;
 }
