@@ -7,6 +7,31 @@
   // in the selected-publications section on the homepage.
   const publications = [
     {
+      id: "hoang2026benchmarking",
+      year: 2026,
+      type: "Journal",
+      featured: 2,
+      doi: "10.1016/j.jvcir.2026.104963",
+      title:
+        "Benchmarking Vietnamese image captioning: A spatially-aware transformer and the HDUCap dataset",
+      authors: [
+        "Hoang, Anh Cong",
+        "Nguyen, Hoang Long",
+        "Pham, The-Anh",
+        "Nguyen, Dinh Cong",
+      ],
+      venue: "Journal of Visual Communication and Image Representation",
+      citation: "104963",
+      bibtex: String.raw`@article{hoang2026benchmarking,
+  title={Benchmarking Vietnamese image captioning: A spatially-aware transformer and the HDUCap dataset},
+  author={Hoang, Anh Cong and Nguyen, Hoang Long and Pham, The-Anh and Nguyen, Dinh Cong},
+  journal={Journal of Visual Communication and Image Representation},
+  pages={104963},
+  year={2026},
+  publisher={Elsevier}
+}`,
+    },
+    {
       id: "nguyen2026snm",
       year: 2026,
       type: "Journal",
@@ -122,6 +147,7 @@
       id: "pham2026rcdfusion",
       year: 2026,
       type: "Journal",
+      doi: "10.1587/transinf.2025EDP7237",
       title:
         "RCDFusion: Co-Attention Guided Dynamic Convolution for Multi-Modal Medical Image Fusion",
       authors: [
@@ -140,30 +166,6 @@
   pages={2025EDP7237},
   year={2026},
   publisher={The Institute of Electronics, Information and Communication Engineers}
-}`,
-    },
-    {
-      id: "hoang2026benchmarking",
-      year: 2026,
-      type: "Journal",
-      featured: 2,
-      title:
-        "Benchmarking Vietnamese image captioning: A spatially-aware transformer and the HDUCap dataset",
-      authors: [
-        "Hoang, Anh Cong",
-        "Nguyen, Hoang Long",
-        "Pham, The-Anh",
-        "Nguyen, Dinh Cong",
-      ],
-      venue: "Journal of Visual Communication and Image Representation",
-      citation: "104963",
-      bibtex: String.raw`@article{hoang2026benchmarking,
-  title={Benchmarking Vietnamese image captioning: A spatially-aware transformer and the HDUCap dataset},
-  author={Hoang, Anh Cong and Nguyen, Hoang Long and Pham, The-Anh and Nguyen, Dinh Cong},
-  journal={Journal of Visual Communication and Image Representation},
-  pages={104963},
-  year={2026},
-  publisher={Elsevier}
 }`,
     },
     {
