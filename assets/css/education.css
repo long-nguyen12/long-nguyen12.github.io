@@ -105,19 +105,19 @@ button:hover{
 }
 
 .education-summary {
-    margin-bottom: 0.8rem;
-    font-size: 1.02rem;
-    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.55;
 }
 
 .research-focus-list {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.8rem;
     padding-left: 1.2rem;
 }
 
 .research-focus-list li {
-    margin-bottom: 0.55rem;
-    line-height: 1.65;
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
 }
 
 .research-focus-list strong {

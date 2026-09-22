@@ -214,8 +214,8 @@ nav.navbar {
 
 .page-shell {
   width: min(var(--content-width), calc(100% - 1.5rem));
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .page-shell--compact {
@@ -226,9 +226,9 @@ nav.navbar {
   display: inline-flex;
   align-items: center;
   gap: 0.85rem;
-  margin-bottom: 2rem;
-  font-size: 2.2rem;
-  font-weight: 800;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
@@ -260,7 +260,7 @@ body .card:hover {
 }
 
 body .card-body {
-  padding: 1.65rem 1.75rem;
+  padding: 1.1rem 1.25rem;
 }
 
 body .card-title {
@@ -363,8 +363,8 @@ body .articles-card ol {
 }
 
 body .articles-card li {
-  margin-bottom: 1rem;
-  padding: 1.2rem 1.1rem 0.9rem 0.4rem;
+  margin-bottom: 0;
+  padding: 0.8rem 0.8rem 0.7rem 0.35rem;
   border-bottom: 1px solid var(--border-soft);
 }
 
@@ -409,7 +409,7 @@ body .bibtex-copy-btn:hover {
 }
 
 body .icon-box {
-  padding: 1.65rem 1.75rem;
+  padding: 1.1rem 1.25rem;
 }
 
 .teaching-mark {
@@ -559,14 +559,14 @@ body .text-muted {
   }
 
   .page-shell {
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
   }
 }
 
 @media (max-width: 767.98px) {
   body .card-body,
   body .icon-box {
-    padding: 1.35rem 1.2rem;
+    padding: 1rem;
   }
 
   body .card-img-top {
@@ -575,7 +575,7 @@ body .text-muted {
 
   .page-title {
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.15rem;
     font-size: 1.8rem;
   }
 

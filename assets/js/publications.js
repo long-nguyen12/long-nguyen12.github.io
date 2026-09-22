@@ -382,22 +382,22 @@
       links.push(externalLink(publication.code, "Code", "publication-link"));
     }
 
-    const typeClass =
-      publication.type === "Journal" ? "" : " publication-type--conference";
     const citation = publication.citation
       ? `, ${escapeHtml(publication.citation)}`
       : "";
 
     return `
       <article class="publication-entry" id="publication-${publication.id}">
-        <span class="publication-type${typeClass}">${escapeHtml(publication.type)}</span>
-        <h3 class="publication-title">${title}</h3>
-        <p class="publication-authors">${renderAuthors(publication.authors)}.</p>
-        <p class="publication-venue"><cite>${escapeHtml(publication.venue)}</cite>${citation}.</p>
-        <div class="publication-actions">
-          ${links.join("")}
-          <button class="btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">BibTeX</button>
+        <div class="publication-content">
+          <h2 class="publication-title">${title}</h2>
+          <p class="publication-authors">${renderAuthors(publication.authors)}.</p>
+          <p class="publication-venue"><cite>${escapeHtml(publication.venue)}</cite>${citation}.</p>
+          <div class="publication-actions">
+            ${links.join("")}
+            <button class="btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">BibTeX</button>
+          </div>
         </div>
+        <time class="publication-year" datetime="${publication.year}">${publication.year}</time>
         <div id="${collapseId}" class="collapse bibtex-card position-relative">
           <button class="btn btn-sm bibtex-copy-btn" type="button" data-copy-bibtex="${bibtexId}">Copy</button>
           <pre id="${bibtexId}">${escapeHtml(publication.bibtex)}</pre>
@@ -414,24 +414,14 @@
     const sortedPublications = [...publications].sort(
       (first, second) => second.year - first.year,
     );
-    const years = [
-      ...new Set(sortedPublications.map((publication) => publication.year)),
-    ];
-
-    container.innerHTML = years
-      .map((year) => {
-        const entries = sortedPublications
-          .filter((publication) => publication.year === year)
-          .map(renderPublication)
-          .join("");
-
-        return `
-        <section class="publication-group" aria-labelledby="publications-${year}">
-          <h2 class="publication-year" id="publications-${year}">${year}</h2>
-          <div class="publication-list">${entries}</div>
-        </section>`;
-      })
-      .join("");
+    container.innerHTML = `
+      <div class="publication-list-header" aria-hidden="true">
+        <span>Publication</span>
+        <span>Year</span>
+      </div>
+      <div class="publication-list">
+        ${sortedPublications.map(renderPublication).join("")}
+      </div>`;
   };
 
   const renderHighlightedPublications = () => {

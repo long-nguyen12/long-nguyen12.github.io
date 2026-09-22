@@ -1,5 +1,5 @@
 .home-shell {
-  padding-top: 2.2rem;
+  padding-top: 1.5rem;
 }
 
 .intro-card,
@@ -15,7 +15,7 @@
 }
 
 .home-hero {
-  padding: clamp(1.5rem, 4vw, 2.75rem);
+  padding: clamp(1.25rem, 3vw, 1.8rem);
   background:
     linear-gradient(120deg, rgba(92, 200, 189, 0.1), transparent 42%),
     linear-gradient(300deg, rgba(240, 185, 104, 0.08), transparent 38%),
@@ -79,7 +79,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
-  margin: 1.4rem 0 0;
+  margin: 1rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -94,16 +94,16 @@
 }
 
 .home-content-grid {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .section-panel,
 .profile-panel {
-  padding: clamp(1.35rem, 3vw, 2rem);
+  padding: clamp(1rem, 2vw, 1.35rem);
 }
 
 .section-panel + .section-panel {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .section-panel h2,
@@ -114,21 +114,26 @@
 }
 
 .section-intro {
-  margin-bottom: 1.3rem;
-  line-height: 1.75;
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
 }
 
 .research-pillars {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border: 1px solid rgba(var(--blue-medium-rgb), 0.13);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .research-pillars article {
-  padding: 1rem;
-  border: 1px solid rgba(var(--blue-medium-rgb), 0.13);
-  border-radius: 9px;
+  padding: 0.7rem 0.85rem;
   background: rgba(var(--blue-medium-rgb), 0.045);
+}
+
+.research-pillars article + article {
+  border-top: 1px solid var(--border-soft);
 }
 
 .research-pillars h3 {
@@ -140,7 +145,7 @@
 .research-pillars p {
   margin-bottom: 0;
   font-size: 0.92rem;
-  line-height: 1.58;
+  line-height: 1.5;
 }
 
 .section-heading-row {
@@ -163,7 +168,7 @@
 }
 
 .selected-publication {
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   border-top: 1px solid var(--border-soft);
 }
 
@@ -193,8 +198,8 @@
 }
 
 .profile-affiliation {
-  margin-bottom: 1.25rem;
-  line-height: 1.65;
+  margin-bottom: 0.85rem;
+  line-height: 1.55;
 }
 
 .profile-links {
@@ -204,14 +209,14 @@
 }
 
 .profile-links li + li {
-  margin-top: 0.55rem;
+  margin-top: 0.35rem;
 }
 
 .profile-link {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.7rem 0.85rem;
+  padding: 0.55rem 0.75rem;
   border-radius: 8px;
   background: rgba(var(--blue-medium-rgb), 0.055);
   color: var(--gray-black);
@@ -224,8 +229,8 @@
 
 .contact-note {
   display: block;
-  margin-top: 1rem;
-  padding: 0.85rem;
+  margin-top: 0.7rem;
+  padding: 0.7rem;
   border: 1px solid rgba(240, 185, 104, 0.18);
   border-radius: 8px;
   background: rgba(240, 185, 104, 0.08);
